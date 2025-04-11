@@ -1,0 +1,1 @@
+{"version":3,"file":"pokemonpasttypes.js","sourceRoot":"./","sources":["src/models/pokemonpasttypes.ts"],"names":[],"mappings":";;;AAAA,6BAAwB;AACxB,yDAAyE;AACzE,iDAA2D;AAS3D,gBAAgB;AACH,QAAA,gBAAgB,GAAG,OAAC,CAAC,MAAM,CAAC;IACvC,UAAU,EAAE,oCAAiB;IAC7B,KAAK,EAAE,OAAC,CAAC,KAAK,CAAC,2BAAY,CAAC;CAC7B,CAAC,CAAC"}

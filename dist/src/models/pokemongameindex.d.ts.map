@@ -1,0 +1,1 @@
+{"version":3,"file":"pokemongameindex.d.ts","sourceRoot":"./","sources":["src/models/pokemongameindex.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AACxB,OAAO,EAAE,gBAAgB,EAAqB,MAAM,oBAAoB,CAAC;AACzE;;GAEG;AACH,MAAM,WAAW,gBAAgB;IAC/B,UAAU,EAAE,MAAM,CAAC;IACnB,OAAO,EAAE,gBAAgB,CAAC;CAC3B;AAED,gBAAgB;AAChB,eAAO,MAAM,iBAAiB;;;;;;;;;;;;;;;;;;;;;;;;EAG5B,CAAC"}

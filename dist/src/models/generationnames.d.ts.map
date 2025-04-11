@@ -1,0 +1,1 @@
+{"version":3,"file":"generationnames.d.ts","sourceRoot":"./","sources":["src/models/generationnames.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AACxB,OAAO,EAAE,gBAAgB,EAAqB,MAAM,oBAAoB,CAAC;AAEzE,MAAM,WAAW,eAAe;IAC9B,IAAI,EAAE,MAAM,CAAC;IACb,QAAQ,EAAE,gBAAgB,CAAC;CAC5B;AAED,gBAAgB;AAChB,eAAO,MAAM,gBAAgB;;;;;;;;;;;;;;;;;;;;;;;;EAG3B,CAAC"}
