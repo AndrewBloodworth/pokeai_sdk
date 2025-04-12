@@ -11,11 +11,20 @@ yarn install
 ```
 
 ```bash
+# Install TypeScript globally if you haven't already
+npm install -g typescript
+
 # Transpile the TypeScript source to the `dist` folder
-npx tsc
+tsc
 ```
 
 ## Getting Started
+
+### Run Example
+
+```bash
+npm run start:dev
+```
 
 ### Initialize the SDK
 
@@ -30,8 +39,11 @@ const client = new PokeAPI();
 ### Get One Pokémon
 
 ```ts
-const result = await client.pokemon.findOne("pikachu");
-console.log(result.classes?.name); // => "pikachu"
+const { classes: pikachu } = await client.pokemon.findOne("pikachu");
+console.log(pikachu?.name); // => "pikachu"
+
+const { classes: bulbasaur } = await client.pokemon.findOne(1);
+console.log(bulbasaur?.name); // => "bulbasaur"
 ```
 
 ---
@@ -39,13 +51,10 @@ console.log(result.classes?.name); // => "pikachu"
 ### List All Pokémon with Pagination
 
 ```ts
-let data = await client.pokemon.findAll({ limit: 20 });
-while (data) {
-  if (data.next) {
-    data = await data.next();
-  } else {
-    break;
-  }
+let pokemons = await client.pokemon.findAll({ limit: 20 });
+
+while (pokemons) {
+  pokemons = await pokemons.next();
 }
 ```
 
@@ -54,8 +63,13 @@ while (data) {
 ### Get a Generation
 
 ```ts
-const gen = await client.generation.findOne(1);
-console.log(gen.classes?.name);
+const { classes: generationI } = await client.generation.findOne(
+  "generation-i"
+);
+console.log(generationI?.name); // => "generation-i"
+
+const { classes: generationII } = await client.generation.findOne(2);
+console.log(generationII?.name); // => "generation-ii"
 ```
 
 ---
@@ -63,20 +77,17 @@ console.log(gen.classes?.name);
 ### Paginate Generations
 
 ```ts
-let data = await client.generation.findAll({ limit: 1 });
-while (data) {
-  if (data.next) {
-    data = await data.next();
-  } else {
-    break;
-  }
+let generations = await client.generation.findAll({ limit: 20 });
+
+while (generations) {
+  generations = await generations.next();
 }
 ```
 
 ## Testing
 
 ```bash
-npm vitest
+npm test
 ```
 
 Integration tests are included under `/tests`. They validate all endpoints, pagination, and error scenarios.
@@ -89,3 +100,4 @@ Due to the 4-hour time constraint of the take-home project, I chose to leverage 
 - **Typed Zod Schemas**: We use `zod` to safely validate and transform inbound API data and outbound request shapes, reducing the likelihood of runtime errors.
 - **Manual SDK**: In accordance with the instructions, no auto-generated code was used. All request/response logic was implemented by hand.
 - **SDK Separation**: The code is structured using `lib`, `models`, and `sdk` folders to maintain clean separation of concerns—mirroring Speakeasy’s proven structure and making the SDK more maintainable and testable.
+- **Testing with Vitest**: We use Vitest as our testing framework for fast and modern unit + integration testing with great TypeScript support and performance.

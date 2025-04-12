@@ -114,7 +114,7 @@ export class Pokemons extends ClientSDK {
   async findAll(
     params: { limit: number; offset?: number },
     options?: RequestOptions
-  ): Promise<Paginated<models.ListPokemonResponse>> {
+  ): Promise<Paginated<models.ListPokemonResponse> | null> {
     const input: models.ListPokemonRequest = {
       limit: params.limit,
       offset: params.offset,
@@ -190,7 +190,7 @@ export class Pokemons extends ClientSDK {
       // Fallback: no next page
       return {
         ...result,
-        next: null,
+        next: async () => null,
       };
     } else if (this.matchResponse(response, "5XX", "application/json")) {
       const responseBody = await response.json();
@@ -215,7 +215,7 @@ export class Pokemons extends ClientSDK {
         Error: responseBody,
       });
 
-      return { ...result, next: null };
+      return { ...result, next: async () => null };
     } else {
       // console.log(response);
       const responseBody = await response.text();

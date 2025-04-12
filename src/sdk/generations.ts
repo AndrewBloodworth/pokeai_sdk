@@ -112,7 +112,7 @@ export class Generations extends ClientSDK {
   async findAll(
     params: { limit: number; offset?: number },
     options?: RequestOptions
-  ): Promise<Paginated<models.ListGenerationResponse>> {
+  ): Promise<Paginated<models.ListGenerationResponse> | null> {
     const input: models.ListGenerationRequest = {
       limit: params.limit,
       offset: params.offset,
@@ -188,7 +188,7 @@ export class Generations extends ClientSDK {
       // Fallback: no next page
       return {
         ...result,
-        next: null,
+        next: async () => null,
       };
     } else if (this.matchResponse(response, "5XX", "application/json")) {
       const responseBody = await response.json();
@@ -212,7 +212,7 @@ export class Generations extends ClientSDK {
         Error: responseBody,
       });
 
-      return { ...result, next: null };
+      return { ...result, next: async () => null };
     } else {
       const responseBody = await response.text();
       throw new models.SDKError(
