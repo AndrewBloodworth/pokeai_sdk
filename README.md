@@ -10,6 +10,11 @@ npm install
 yarn install
 ```
 
+```bash
+# Transpile the TypeScript source to the `dist` folder
+npx tsc
+```
+
 ## Getting Started
 
 ### Initialize the SDK
