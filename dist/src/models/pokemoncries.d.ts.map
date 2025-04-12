@@ -1,1 +1,0 @@
-{"version":3,"file":"pokemoncries.d.ts","sourceRoot":"./","sources":["src/models/pokemoncries.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AACxB;;GAEG;AACH,MAAM,WAAW,UAAU;IACzB,MAAM,EAAE,MAAM,CAAC;IACf,MAAM,EAAE,MAAM,CAAC;CAChB;AAED,gBAAgB;AAChB,eAAO,MAAM,WAAW;;;;;;;;;EAGtB,CAAC"}

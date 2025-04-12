@@ -1,1 +1,0 @@
-{"version":3,"file":"pokemonability.js","sourceRoot":"./","sources":["src/models/pokemonability.ts"],"names":[],"mappings":";;;AAAA,6BAAwB;AACxB,yDAAyE;AAUzE,gBAAgB;AACH,QAAA,eAAe,GAAG,OAAC,CAAC,MAAM,CAAC;IACtC,SAAS,EAAE,OAAC,CAAC,OAAO,EAAE;IACtB,IAAI,EAAE,OAAC,CAAC,MAAM,EAAE;IAChB,OAAO,EAAE,oCAAiB;CAC3B,CAAC,CAAC"}

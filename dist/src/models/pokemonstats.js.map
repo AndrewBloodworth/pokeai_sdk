@@ -1,1 +1,0 @@
-{"version":3,"file":"pokemonstats.js","sourceRoot":"./","sources":["src/models/pokemonstats.ts"],"names":[],"mappings":";;;AAAA,6BAAwB;AACxB,yDAAyE;AAUzE,gBAAgB;AACH,QAAA,aAAa,GAAG,OAAC,CAAC,MAAM,CAAC;IACpC,SAAS,EAAE,OAAC,CAAC,MAAM,EAAE;IACrB,MAAM,EAAE,OAAC,CAAC,MAAM,EAAE;IAClB,IAAI,EAAE,oCAAiB;CACxB,CAAC,CAAC"}

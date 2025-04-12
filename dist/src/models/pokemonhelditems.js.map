@@ -1,1 +1,0 @@
-{"version":3,"file":"pokemonhelditems.js","sourceRoot":"./","sources":["src/models/pokemonhelditems.ts"],"names":[],"mappings":";;;AAAA,6BAAwB;AACxB,yDAAyE;AAYzE,gBAAgB;AACH,QAAA,iBAAiB,GAAG,OAAC,CAAC,MAAM,CAAC;IACxC,IAAI,EAAE,oCAAiB;IACvB,eAAe,EAAE,OAAC,CAAC,KAAK,CACtB,OAAC,CAAC,MAAM,CAAC;QACP,MAAM,EAAE,OAAC,CAAC,MAAM,EAAE;QAClB,OAAO,EAAE,oCAAiB;KAC3B,CAAC,CACH;CACF,CAAC,CAAC"}

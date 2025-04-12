@@ -1,1 +1,0 @@
-{"version":3,"file":"namedapiresource.d.ts","sourceRoot":"./","sources":["src/models/namedapiresource.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,MAAM,WAAW,gBAAgB;IAC/B,IAAI,EAAE,MAAM,CAAC;IACb,GAAG,EAAE,MAAM,CAAC;CACb;AAED,gBAAgB;AAChB,eAAO,MAAM,iBAAiB;;;;;;;;;EAG5B,CAAC"}
